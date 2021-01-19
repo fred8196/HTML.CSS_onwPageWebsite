@@ -1,0 +1,318 @@
+CSS Reset
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+*,*:before,*:after{
+    box-sizing:border-box;
+    }
+
+.wrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.topbar ul{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f2f2f2;
+    padding: 5px 10px;
+}
+
+.fb a{
+    text-decoration: none;
+    color: #424c97;
+    padding-right: 10px;
+    border-right:1px solid #c8d6e5;
+}
+
+.fb a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.twitter a{
+    text-decoration: none;
+    color: #009ffa;
+    padding-left: 10px;
+}
+
+.twitter a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    display: block;
+    width: 224px;
+    height: 50px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu{
+    width: 200px;
+    justify-content: space-between;
+}
+
+.menu a{
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: #55E6C1;
+    font-weight: bolder;
+    display: block;
+    border-bottom: 4px solid transparent;
+    padding-top: 20px;
+}
+
+.menu a:hover{
+    border-bottom: 4px solid #55E6C1;
+}
+
+.banner{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.banner img{
+    width: 100%;
+    display: block;
+}
+
+.banner h1{
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 36px;
+    background:rgba(0,0,0,0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 0 30px 15px;
+}
+
+.courses{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgalign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.courses-item{
+    width: 300px;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #ecf0f1;
+    padding: 10px;
+    box-shadow: 0 5px 5px -5px #7f8fa6;
+    border-radius: 0 0 5px 5px;
+}
+
+.courses-item h2{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.courses-item p{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.courses-item li{
+    list-style-type: disc;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+h3{
+    margin: 80px 0 30px 0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.comparison{
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.comparison th, .comparison td{
+    border-top: 1px solid #dcdde1;
+    border-bottom: 1px solid #dcdde1;
+    padding: 10px 100px 10px 30px;
+}
+
+.comparison th{
+    background: #f5f6fa;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.highlight{
+    color: #1abc9c;
+}
+
+.feedback{
+    background: linear-gradient(#00644b,#009772);
+    padding: 20px;
+}
+
+.feedback h4{
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-size: 24px;
+}
+
+.message{
+    width: 450px;
+    margin-top: 20px;
+    border-radius: 5px;
+    resize: none;
+    border: 2px solid #ccc;
+    font-size: 16px;
+}
+
+.message:focus{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+}
+
+.messenger{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-top: 20px;
+}
+
+.messenger input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px 300px 10px 5px;
+    border-radius: 5px;
+    border-color:transparent ;
+    border: 2px solid #ccc; 
+}
+
+.messenger input:focus{
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.messenger .submitbtn{
+    align-self: flex-end;
+    padding: 10px 20px;
+    color: white;
+    background-color: #00cc99;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.submitbtn:hover{
+    background-color: #079992;
+    border: 1px solid white;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footerlogo{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png);
+    width: 171px;
+    height: 36px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contact p{
+    padding: 5px 0;
+}
+
+.contact a{
+    text-decoration: none;
+    color: #e54991;
+}
+
+.contact a:hover{
+    text-decoration: underline;
+    color: #009ffa;
+}
